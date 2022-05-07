@@ -12,17 +12,18 @@ content-type: application/json
 
 ###
 
-DELETE url HTTP/1.1 http://localhost:4000/saveTodo 
-content-type: application/json
+DELETE  http://localhost:4000/deleteTodo/62762bb2a2fb9d4348932e66 HTTP/1.1
 
-{
-    "id": "62762bb2a2fb9d4348932e66"
-}
 ###
 
-get url HTTP/1.1 http://localhost:4000/getTodo 
+put   http://localhost:4000/updateTodo HTTP/1.1
 content-type: application/json
 
-{
-    "id": "62762bb2a2fb9d4348932e66"
+{   "id"  : "62762bb2a2fb9d4348932e66",
+    "todo": "Test changed2"
 }
+
+###
+
+
+get   http://localhost:4000/getTodo/62762bb2a2fb9d4348932e66 HTTP/1.1
