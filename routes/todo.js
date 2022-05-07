@@ -3,7 +3,6 @@ import { getAll, saveTodo, getTodo, updateTodo, deleteTodo } from '../controller
 
 const router = express.Router();
 
-
 router.get('/getAll', getAll)
 router.post('/saveTodo', saveTodo);
 router.get('/getTodo/:id', getTodo)
