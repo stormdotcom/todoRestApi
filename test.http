@@ -1,0 +1,28 @@
+
+GET http://localhost:4000/getAll HTTP/1.1
+
+
+###
+post http://localhost:4000/saveTodo 
+content-type: application/json
+
+{
+    "todo": "Test 3"
+}
+
+###
+
+DELETE url HTTP/1.1 http://localhost:4000/saveTodo 
+content-type: application/json
+
+{
+    "id": "62762bb2a2fb9d4348932e66"
+}
+###
+
+get url HTTP/1.1 http://localhost:4000/getTodo 
+content-type: application/json
+
+{
+    "id": "62762bb2a2fb9d4348932e66"
+}
